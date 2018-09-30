@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "542248011920",
+    "firebase_url": "https://watt-walk-the-talk.firebaseio.com",
+    "project_id": "watt-walk-the-talk",
+    "storage_bucket": "watt-walk-the-talk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:542248011920:android:4baf08c2a05fcb15",
+        "android_client_info": {
+          "package_name": "com.viwid.watt.watt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "542248011920-5haqm8si4sha2q9qh51p24sp147hab1f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAb-eoNkxJ_D15wKk0PP2a00qbSwKXOnow"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

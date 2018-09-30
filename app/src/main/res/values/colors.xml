@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#5fceff</color>
+
+    <color name="colorPrimaryDark_login_screen">#5fceff</color>
+    <color name="colorPrimaryDark_signup_screen">#000000</color>
+
+    <color name="BrandColor">#67d2ff</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+
+    //[Start]
+    //Color Resources for Profile Screen
+    <color name="profile_button_bg_tint">#44e5e5e5</color>
+    <color name="profile_button_hint_color">#44000000</color>
+    //[End]
+</resources>

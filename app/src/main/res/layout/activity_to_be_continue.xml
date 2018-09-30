@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.viwid.watt.watt.ToBeContinue">
+
+
+    <TextView
+        android:id="@+id/startTrotTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Start a Trot"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/followingImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_circle_color"
+        android:scaleType="center"
+        android:src="@drawable/watt_followers_white_18dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/startTrotTextView" />
+
+    <TextView
+        android:id="@+id/followingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Select one of your Interests\nthat you want to Trot for"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@id/followingImageView"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintLeft_toRightOf="@id/followingImageView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/followingImageView" />
+
+    <ImageView
+        android:id="@+id/timerImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_circle_color"
+        android:scaleType="center"
+        android:src="@drawable/watt_badge"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/followingImageView" />
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="How long would you like to\nTrot for?"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@id/timerImageView"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintLeft_toRightOf="@id/timerImageView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/timerImageView" />
+
+    <LinearLayout
+        android:id="@+id/wheelView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/timerImageView">
+
+        <com.contrarywind.view.WheelView
+            android:id="@+id/hours_wheelview"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hours"
+            android:textColor="#000000" />
+
+        <com.contrarywind.view.WheelView
+            android:id="@+id/minutes_wheelview"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="minutes"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_circle_color"
+        android:src="@drawable/watt_right_white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/wheelView" />
+
+    <TextView
+        android:id="@+id/startTorttingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="5dp"
+        android:text="Start Trotting"
+        android:clickable="true"
+        android:textColor="@color/BrandColor"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/right"
+        app:layout_constraintRight_toRightOf="@id/right"
+        app:layout_constraintTop_toBottomOf="@id/right"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <android.support.constraint.Group
+        android:id="@+id/group1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:constraint_referenced_ids="followingTextView,followingImageView,wheelView,timerImageView,timerTextView,startTorttingTextView,startTrotTextView,right" />
+
+    <ImageView
+        android:id="@+id/justTrottedFor"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/bg_circle_color"
+        android:scaleType="center"
+        android:src="@drawable/watt_followers_white_18dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/justTrotTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You just Trotted for\nFree Tibet\nby Kalyan Gautham"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@id/justTrottedFor"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintLeft_toRightOf="@id/justTrottedFor"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/justTrottedFor" />
+
+    <ImageView
+        android:id="@+id/trotAnimation"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_circle_color"
+        android:scaleType="center"
+        android:src="@drawable/watt_followers_white_18dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/justTrottedFor" />
+
+    <TextView
+        android:id="@+id/trotCountView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Every step that you take counts!\nStart Trotting."
+        android:textColor="@color/BrandColor"
+        app:layout_constraintBottom_toBottomOf="@id/trotAnimation"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintLeft_toRightOf="@id/trotAnimation"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/trotAnimation" />
+
+    <ImageView
+        android:id="@+id/timerImageView1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_circle_color"
+        android:scaleType="center"
+        android:src="@drawable/watt_badge"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/trotAnimation" />
+
+    <TextView
+        android:id="@+id/countDownTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/BrandColor"
+        app:layout_constraintBottom_toBottomOf="@id/timerImageView1"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintLeft_toRightOf="@id/timerImageView1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/timerImageView1" />
+
+    <android.support.constraint.Group
+        android:id="@+id/group2"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="justTrotTextView,justTrottedFor,timerImageView1,trotCountView,countDownTimer,trotAnimation" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="choose_first_screen_appbar_height">56dp</dimen>
+
+    //[Start]
+    //Dimens Resources For Profile Screen
+    <dimen name="collapsing_imageview_height">350dp</dimen>
+    <dimen name="margin_bottom_textView_edit_profile">5dp</dimen>
+    <dimen name="margin_bottom_editText_edit_profile">10dp</dimen>
+    //[End}
+
+    <dimen name="card_extra_height">20dp</dimen>
+    <dimen name="card_bottom_info_height">150dp</dimen>
+
+</resources>

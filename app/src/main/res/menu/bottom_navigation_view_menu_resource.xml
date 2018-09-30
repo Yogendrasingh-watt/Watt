@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/dest_activity"
+        android:title="@string/dest_activity"
+        android:icon="@drawable/bnv_activity_drawable"
+        app:showAsAction="always|withText"/>
+    <item
+        android:id="@+id/dest_interests"
+        android:title="@string/dest_interests"
+        android:icon="@drawable/bnv_interests_drawable"
+        app:showAsAction="always|withText"/>
+    <item
+        android:id="@+id/dest_add"
+        android:title="@string/dest_add"
+        android:icon="@drawable/bnv_add_drawable"
+        app:showAsAction="always|withText"/>
+    <item
+        android:id="@+id/dest_notifications"
+        android:title="@string/dest_notifications"
+        android:icon="@drawable/bnv_notifications_drawable"
+        app:showAsAction="always|withText"/>
+
+    <item
+        android:id="@+id/dest_profile"
+        android:title="@string/dest_profile"
+        android:icon="@drawable/bnv_profile_drawable"
+        app:showAsAction="always|withText"/>
+</menu>

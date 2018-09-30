@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.viwid.watt.watt.Activity.CreateInterestActivity">
+
+    <View
+        android:id="@+id/headingLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#80d8d8d8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/headingView"
+        />
+    <LinearLayout
+        android:id="@+id/headingView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/headingLine"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/chooseInterestLine">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="center"
+            android:src="@drawable/watt_add_photo_video"
+            android:background="@drawable/bg_circle_color"
+            android:layout_margin="10dp"
+            android:id="@+id/logo"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Photo/Video/GIF"
+            android:textColor="@color/BrandColor"
+            android:textSize="17sp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/close_interest"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_close_white_24dp"
+            android:layout_margin="10dp"
+            android:tint="#5fceff" />
+
+    </LinearLayout>
+    <View
+        android:id="@+id/chooseInterestLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#80d8d8d8"
+        app:layout_constraintBottom_toTopOf="@id/chooseInterestFL"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headingView"
+        />
+    <FrameLayout
+        android:id="@+id/chooseInterestFL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chooseInterestLine"
+        app:layout_constraintBottom_toTopOf="@id/selectDateLine"
+        android:layout_marginTop="1dp"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/addInterestButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/bnv_add"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose an Intereset"
+            android:textSize="17sp"
+            android:layout_marginLeft="80dp"
+            android:layout_gravity="center_vertical"
+            />
+    </FrameLayout>
+    <View
+        android:id="@+id/selectDateLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#80d8d8d8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chooseInterestFL"
+        app:layout_constraintBottom_toTopOf="@id/selectDateLL"
+        />
+    <LinearLayout
+        android:id="@+id/selectDateLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/selectDateLine"
+        app:layout_constraintBottom_toTopOf="@id/addMedia"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:gravity="left|center_vertical"
+            android:layout_gravity="right"
+            android:hint="placeholder text"
+            android:textSize="10sp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/bg_cotrot_activity_button"/>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/addMedia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/selectDateLL"
+        app:layout_constraintBottom_toTopOf="@id/selectPeopleLine"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:background="#33BDBDBD">
+
+        <FrameLayout
+            android:id="@+id/addPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/watt_add_photo"
+                android:tint="@color/BrandColor"
+                android:background="@drawable/bg_ring"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Photo"
+                android:textSize="10sp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="55dp"
+                android:textColor="@color/BrandColor"/>
+
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/addVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/watt_add_video"
+                android:tint="@color/BrandColor"
+                android:background="@drawable/bg_ring"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Video"
+                android:textSize="10sp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="55dp"
+                android:textColor="@color/BrandColor"/>
+
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/addGif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/watt_add_gif"
+                android:tint="@color/BrandColor"
+                android:background="@drawable/bg_ring"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Gif"
+                android:textSize="10sp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="55dp"
+                android:textColor="@color/BrandColor"/>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/selectPeopleLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#80d8d8d8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addMedia"
+        app:layout_constraintBottom_toTopOf="@id/buttonCreateInterest"
+        />
+
+    <Button
+        android:id="@+id/buttonCreateInterest"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Create Activity Card"
+        app:layout_constraintTop_toBottomOf="@id/selectPeopleLine"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/right_layer_list"
+        android:drawablePadding="10dp"
+        android:textSize="12sp"
+        android:textAllCaps="false"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/BrandColor"
+        android:background="@drawable/bg_interest_activity_button"
+        />
+</android.support.constraint.ConstraintLayout>

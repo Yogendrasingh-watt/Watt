@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp"
+    android:layout_margin="8dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="left">
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/watt_cotrots"
+            android:tint="#000000"
+            android:layout_gravity="center_vertical" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/schedule_coTrot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Schedule a coTrot"
+                android:gravity="center_horizontal"
+                android:textStyle="normal"
+                android:textSize="20sp"
+                android:textColor="#000"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="left">
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/watt_invite_contacts"
+            android:layout_gravity="center_vertical"
+            android:tint="#000"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/create_challenge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create a Challenge"
+                android:gravity="center_horizontal"
+                android:textStyle="normal"
+                android:textSize="20sp"
+                android:textColor="#000"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="left">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/watt_add_photo_video"
+            android:tint="#000"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/create_activity_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create Activity Card"
+                android:gravity="center_horizontal"
+                android:textStyle="normal"
+                android:textSize="20sp"
+                android:textColor="#000"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="left">
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/watt_create_interest_page_black" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/create_interest_page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Create Interest Page"
+                android:gravity="center_horizontal"
+                android:textStyle="normal"
+                android:textSize="20sp"
+                android:textColor="#000"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="left">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/watt_trot_black"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/create_trot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trot"
+                android:gravity="center_horizontal"
+                android:textStyle="normal"
+                android:textSize="20sp"
+                android:textColor="#000"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
